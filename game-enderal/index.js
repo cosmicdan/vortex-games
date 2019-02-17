@@ -18,38 +18,6 @@ function findGame() {
   }
 }
 
-let tools = [
-  {
-    id: 'TES5Edit',
-    name: 'TES5Edit',
-    logo: 'tes5edit.png',
-    executable: () => 'TES5Edit.exe',
-    requiredFiles: [
-      'TES5Edit.exe',
-    ],
-  },
-  {
-    id: 'WryeBash',
-    name: 'Wrye Bash',
-    logo: 'wrye.png',
-    executable: () => 'Wrye Bash.exe',
-    requiredFiles: [
-      'Wrye Bash.exe',
-    ],
-  },
-  {
-    id: 'FNIS',
-    name: 'Fores New Idles in Skyrim',
-    shortName: 'FNIS',
-    logo: 'fnis.png',
-    executable: () => 'GenerateFNISForUsers.exe',
-    requiredFiles: [
-      'GenerateFNISForUsers.exe',
-    ],
-    relative: true,
-  },
-];
-
 function main(context) {
   context.registerGame({
   	// note that this is remapped to 'skyrim' in the nexus_integration extension
